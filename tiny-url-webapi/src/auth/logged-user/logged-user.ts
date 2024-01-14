@@ -1,6 +1,9 @@
-export class CreateUserForm {
+export class LoggedUser {
+  id: string;
+
   username: string;
+
   name: string;
+
   email: string;
-  password: string;
 }

@@ -23,6 +23,11 @@ export class UserModel extends Model {
   @Column({
     unique: true,
   })
+  username: string;
+
+  @Column({
+    unique: true,
+  })
   email: string;
 
   @Column
