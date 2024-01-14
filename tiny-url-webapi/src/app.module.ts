@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { CacheModule } from '@nestjs/cache-manager';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { UserModule } from './user/user.module';
-import { UserModel } from './user/form/user.model';
+import { UserModel } from './user/user.model';
 import { AuthModule } from './auth/auth.module';
 import { UrlModule } from './url/url.module';
 

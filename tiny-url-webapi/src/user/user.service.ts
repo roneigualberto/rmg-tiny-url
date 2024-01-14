@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-import { UserModel } from './form/user.model';
+import { UserModel } from './user.model';
 import { CreateUserForm } from './form/create-user-form';
 
 @Injectable()
