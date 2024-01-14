@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: tiny_url_db
+      POSTGRES_USER: tiny_url
+      POSTGRES_PASSWORD: tinyurl123!
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    depends_on:
+      - postgres
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
+volumes:
+  postgres_data:
+  pgadmin_data:
