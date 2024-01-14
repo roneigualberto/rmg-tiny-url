@@ -13,6 +13,8 @@ async function bootstrap() {
     prefix: 'api/',
   });
 
+  app.enableCors();
+
   const config = new DocumentBuilder()
     .setTitle('Tiny URL API')
     .setDescription('Tiny URL API documention')
