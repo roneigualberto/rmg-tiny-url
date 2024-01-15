@@ -25,6 +25,7 @@ async function bootstrap() {
     .setDescription('Tiny URL API documention')
     .setVersion('v1')
     .addTag('auth')
+    .addTag('url')
     .addBearerAuth()
     .build();
 

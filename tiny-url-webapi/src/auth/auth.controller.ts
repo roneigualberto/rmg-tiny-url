@@ -44,7 +44,6 @@ export class AuthController {
     return this.authService.signUp(userForm);
   }
 
-  @UseGuards(JwtAuthGuard)
   @Get('profile')
   getProfile(@User() user: LoggedUser) {
     return user;
